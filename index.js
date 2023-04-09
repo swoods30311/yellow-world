@@ -1,9 +1,8 @@
-var firstName = "Sandy";
-var age = 34;
-var isADuck = "false";
-var favoriteColor = "blue";
-console.log(age);
-age = "Josh";
-console.log(favoriteColor);
-console.log(firstName);
-console.log(age);
+var sales = 123456789;
+var course = "Typescript";
+var is_published = true;
+var level; //Ts refs to this var of Type 'any'
+//Param 'document' implicitly has an any type 
+function render(document) {
+    console.log(document);
+}
