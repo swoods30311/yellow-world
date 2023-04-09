@@ -1,16 +1,9 @@
-let sales = 123_456_789;
-let course = "Typescript";
-let is_published = true;
-let level; //Ts refs to this var of Type 'any'
+let numbers = [1,2,3,3];
+numbers.push(3);
+console.log(numbers);
+//numbers.push('c'); Argument of type 'string' is not assignable to parameter of type 'number'.ts(2345)
 
 
-//Param 'document' implicitly has an any type 
-function render(document){
-    console.log(document);
-}
-
-
-    
     
 
 

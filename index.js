@@ -1,8 +1,4 @@
-var sales = 123456789;
-var course = "Typescript";
-var is_published = true;
-var level; //Ts refs to this var of Type 'any'
-//Param 'document' implicitly has an any type 
-function render(document) {
-    console.log(document);
-}
+var numbers = [1, 2, 3, 3];
+numbers.push(3);
+console.log(numbers);
+numbers.push('c'); //Argument of type 'string' is not assignable to parameter of type 'number'.ts(2345)
