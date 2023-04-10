@@ -1,7 +1,8 @@
-var employee = {
+"use strict";
+let employee = {
     id: 1,
     name: 'Sandy',
-    retire: function (date) {
+    retire: (date) => {
         console.log(date);
     }
 };
