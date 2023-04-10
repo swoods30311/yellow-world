@@ -1,14 +1,10 @@
-//Type Alias for code reuse
-type Employee = {
-    readonly id: number,
-    name: string,
-    retire: (date: Date) => void
+function kgToLbs(weight: number | string): number{
+        //Narrowing Union Type to a specific one
+        if(typeof weight === 'number')
+            return weight * 2.2;
+        else 
+            return parseInt(weight) * 2.2;
+        
 }
-
-let employee: Employee = {
-    id: 1,
-    name:'Sandy',
-    retire: (date: Date) => {
-        console.log(date);
-    }
-} 
+kgToLbs(10);
+kgToLbs('10kg')
